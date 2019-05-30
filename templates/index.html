@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Mission</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">;
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+  /*
+    NOTE: Commenting is a bit different in CSS. 
+    They start with forward-slash + asterisk 
+    and end with back-slash + asterisk.
+    */
+
+  /* h1 heading tag */
+  h1 {
+    /* Put a 15-pixel margin at the bottom of the heading. */
+    margin-bottom: 15px;
+    /* Change the size of your font to 60 pixels high. */
+    font-size: 35px;
+    /* This will color the heading font white. */
+    color: blue;
+    /* Align the text to the center of its enclosing element (e.g. div). */
+    text-align: center;
+    /* Underline the text. */
+    /* text-decoration: underline;
+    /* The background of the heading element will now be white. */
+    background-color: whitesmoke;
+  }
+
+  /* h2 heading tags */
+  h2 {
+    /* Put a 10-pixel margin at the top of all h2 headings. */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* h3 heading tags */
+  h3 {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 30px;
+    margin-left:25px
+  }
+
+    /* All p tags */
+  p {
+    text-align: center;
+    font-size: 15px;
+    /* Bold the text. */
+    font-weight: bold;
+  }
+
+  
+</style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Update Image</a></p>
+    </div>
+<div class="row">      
+    <div class="leftcolumn" "col-sm-6">
+       <div class="container text-left">
+        <div>
+            <a target=_blank href="Temp_new.html" >  
+            <h2> Featured Mars Image</h2>
+            <img class= "image-responsive resize repose" src="{{Mars_data.featured_image_url}}" height="500" width ="650">
+            </a>
+        </div>
+       </div>
+  
+ <div class="row">      
+    <div class="rightcolumn" "col-lg-6"> 
+      <div class="card" align="left" style="width: 40rem;"> </div.
+        <div class="card-body"></div>
+
+      <div class="card" >
+        <h2> Latest Mars News<h2>
+          <div>    {{Mars_data.news_title}} 
+          </div>
+      </div>  
+      
+    <div class="card" align="left" style="width: 40rem;">
+        <div class="card-body">
+      <h3>{{Mars_data.news_p}} </h3>
+    </div>
+      </div>
+      </div>  
+      <div class="card">
+
+      <h3> {{Mars_data.mars_facts_html}} </h3>
+    </div>
+  </div>
+</div>  
+</div> 
+
+
+
+      <div class="row" id="MissionToMars-dict" align="right"></div>
+         <h3>
+         
+          <div> 
+          <div class="card"></div>
+           <h3> {{Mars_data.news_weather}} </h3>
+          </div>
+          <div class="card"></div>
+                            
+        </h3> 
+
+      </div>
+
+
+
+  <div class="footer navbar-fixed-bottom">
+      <div class="footer-top"></div>
+      <div class="container"> 
+      <p class="footer-text">Abdul Razak  ---  Web Scraping Document Database  ---  5/28/2019</p>
+  </div>
+
+</body>
+
+</html>
+
